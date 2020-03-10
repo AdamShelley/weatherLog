@@ -1,0 +1,7 @@
+.forecast-icon {
+  z-index: 3;
+  height: 7.5rem;
+  width: 7.5rem;
+  margin-top: 1rem;
+  color: #333;
+}
