@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Day from "./Day";
 
 import "./Week.css";
 
-const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+// const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
 const Week = props => {
   console.log(props);
@@ -42,7 +43,15 @@ const Week = props => {
           daily.map(day => {
             return (
               <li key={day.dt} className="week-day__listitem">
-                <Day dailyForecast={day} />
+                <Link
+                  style={{ textDecoration: "none" }}
+                  to={{
+                    pathname: "/hourly/" + day.dt,
+                    state: { location: props.loc, day: day, week: forecast }
+                  }}
+                >
+                  <Day dailyForecast={day} />
+                </Link>
               </li>
             );
           })}

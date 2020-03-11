@@ -1,16 +1,18 @@
-.week-container {
+.hourly-container {
   width: 80%;
-
   text-align: center;
-
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.week-container h2 {
+.hourly-container h2 {
   font-size: 2rem;
 }
 
-.week-container__list {
+.hourly-container__list {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
