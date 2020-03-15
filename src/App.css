@@ -27,6 +27,18 @@ body {
   color: #333;
 }
 
-.main-container > h1 {
+.nav-bar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-bar > h1 {
   font-size: 3rem;
+}
+
+.empty {
+  width: 10%;
 }

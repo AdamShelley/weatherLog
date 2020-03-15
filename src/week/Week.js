@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+
 import { Link } from "react-router-dom";
+import Graph from "../graph/Graph";
 import Day from "./Day";
 
 import "./Week.css";
@@ -37,7 +39,11 @@ const Week = props => {
   return (
     <div className="week-container">
       {/* <h1>This is the weektab</h1> */}
-      <h2>{props.loc}</h2>
+      {forecast && (
+        <h2>
+          {props.loc}, {forecast.city.country}
+        </h2>
+      )}
       <ul className="week-container__list">
         {forecast &&
           daily.map(day => {
@@ -50,12 +56,13 @@ const Week = props => {
                     state: { location: props.loc, day: day, week: forecast }
                   }}
                 >
-                  <Day dailyForecast={day} />
+                  <Day dailyForecast={day} week={true} />
                 </Link>
               </li>
             );
           })}
       </ul>
+      {forecast && <Graph id="chart" data={forecast} week />}
     </div>
   );
 };

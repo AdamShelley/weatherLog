@@ -17,6 +17,7 @@ const Day = props => {
         <DayOfWeek
           day={props.dailyForecast.dt}
           date={props.dailyForecast.dt_txt}
+          week={props.week ? true : false}
         />
         <Icon iconCode={props.dailyForecast.weather[0].id} />
         <Forecast weather={props.dailyForecast.weather[0].description} />

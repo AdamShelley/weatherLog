@@ -1,11 +1,13 @@
 .hourly-container {
-  width: 80%;
+  max-width: 90%;
   text-align: center;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* flex-wrap: wrap; */
+  /* height: 100%; */
 }
 
 .hourly-container h2 {
@@ -14,7 +16,15 @@
 
 .hourly-container__list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   list-style: none;
+  transform: scale(0.8);
+  padding: 1rem;
+
+  /* flex-wrap: wrap; */
+}
+
+.hour__listitem {
+  padding: 0.2rem;
 }

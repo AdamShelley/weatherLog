@@ -1,0 +1,16 @@
+.nav-links {
+  padding: 1rem;
+}
+
+.nav-links__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-links__list > li {
+  padding: 1rem;
+  font-size: 2rem;
+}

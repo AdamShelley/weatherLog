@@ -1,5 +1,6 @@
 import React from "react";
 import HourCard from "./HourCard";
+import Graph from "../graph/Graph";
 
 import "./Hourly.css";
 
@@ -24,7 +25,10 @@ const Hourly = props => {
 
   return (
     <div className="hourly-container">
-      <h2>{location}</h2>
+      <h2>Hourly logs</h2>
+      <h2>
+        {location}, {week.city.country}
+      </h2>
       <ul className="hourly-container__list">
         {times &&
           times.map(hour => {
@@ -35,6 +39,8 @@ const Hourly = props => {
             );
           })}
       </ul>
+
+      {times && <Graph id="chart" data={times} hourly />}
     </div>
   );
 };
