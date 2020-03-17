@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/weatherLog/static/css/main.e37d8758.chunk.css",
+    "main.js": "/weatherLog/static/js/main.c0fcca6d.chunk.js",
+    "main.js.map": "/weatherLog/static/js/main.c0fcca6d.chunk.js.map",
+    "runtime-main.js": "/weatherLog/static/js/runtime-main.f7f016d8.js",
+    "runtime-main.js.map": "/weatherLog/static/js/runtime-main.f7f016d8.js.map",
+    "static/js/2.4c2b71ea.chunk.js": "/weatherLog/static/js/2.4c2b71ea.chunk.js",
+    "static/js/2.4c2b71ea.chunk.js.map": "/weatherLog/static/js/2.4c2b71ea.chunk.js.map",
+    "index.html": "/weatherLog/index.html",
+    "precache-manifest.18232c2e2e633d6778e83b11144dba53.js": "/weatherLog/precache-manifest.18232c2e2e633d6778e83b11144dba53.js",
+    "service-worker.js": "/weatherLog/service-worker.js",
+    "static/css/main.e37d8758.chunk.css.map": "/weatherLog/static/css/main.e37d8758.chunk.css.map",
+    "static/js/2.4c2b71ea.chunk.js.LICENSE.txt": "/weatherLog/static/js/2.4c2b71ea.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7f016d8.js",
+    "static/js/2.4c2b71ea.chunk.js",
+    "static/css/main.e37d8758.chunk.css",
+    "static/js/main.c0fcca6d.chunk.js"
+  ]
+}
