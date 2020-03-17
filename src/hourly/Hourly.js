@@ -25,7 +25,7 @@ const Hourly = props => {
 
   return (
     <div className="hourly-container">
-      <h2>Hourly logs</h2>
+      {/* <h2>Hourly logs</h2> */}
       <h2>
         {location}, {week.city.country}
       </h2>

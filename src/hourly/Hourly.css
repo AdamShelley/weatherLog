@@ -8,23 +8,30 @@
   justify-content: center;
   /* flex-wrap: wrap; */
   /* height: 100%; */
+  font-weight: 200;
 }
 
-.hourly-container h2 {
-  font-size: 2rem;
+.hourly-container > h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
 }
+
+/* .hourly-container > h2:first-child {
+  margin-bottom: 1rem;
+  font-weight: 400;
+} */
 
 .hourly-container__list {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
-  transform: scale(0.8);
+  transform: scale(0.9);
   padding: 1rem;
 
   /* flex-wrap: wrap; */
 }
 
 .hour__listitem {
-  padding: 0.2rem;
+  padding: 0.1rem;
 }

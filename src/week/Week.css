@@ -5,12 +5,20 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-
+  margin-top: 2rem;
   padding: 2rem;
 }
 
 .week-container h2 {
   font-size: 2rem;
+  font-weight: 300;
+}
+
+.week-container > h3 {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .week-container__list {

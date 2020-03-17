@@ -11,6 +11,7 @@ import "./Week.css";
 const Week = props => {
   console.log(props);
   const [forecast, setForecast] = useState();
+  const [error, setError] = useState();
 
   useEffect(() => {
     const fetchWeather = async () => {
@@ -24,6 +25,7 @@ const Week = props => {
         setForecast(data);
       } catch (err) {
         console.log(err);
+        setError(true);
       }
     };
     fetchWeather();
@@ -36,12 +38,14 @@ const Week = props => {
     });
   }
 
+  let locName = props.loc.charAt(0).toUpperCase() + props.loc.slice(1);
+
   return (
     <div className="week-container">
       {/* <h1>This is the weektab</h1> */}
       {forecast && (
         <h2>
-          {props.loc}, {forecast.city.country}
+          {locName}, {forecast.city.country}
         </h2>
       )}
       <ul className="week-container__list">
@@ -62,6 +66,7 @@ const Week = props => {
             );
           })}
       </ul>
+      <h3>Click a day for 3-hour forecast.</h3>
       {forecast && <Graph id="chart" data={forecast} week />}
     </div>
   );

@@ -12,7 +12,6 @@ import { calculateTemps } from "./calculateTemps";
 import "./Graph.css";
 
 const Graph = props => {
-  console.log(props);
   let renderLineChart;
 
   // If the graph needs to be 5 day week
@@ -41,13 +40,15 @@ const Graph = props => {
         width={800}
         height={350}
         data={data}
-        margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
+        margin={{ top: 5, right: 50, bottom: 10, left: 0 }}
       >
         <Line type="monotone" dataKey="high" stroke="#8884d8" />
-        <Line type="monotone" dataKey="low" stroke="#333" />
-        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+        <Line type="monotone" dataKey="low" stroke="#000" />
+        {/* <CartesianGrid stroke="#ccc" strokeDasharray="5 5" /> */}
         <XAxis dataKey="name" />
-        <YAxis />
+        <YAxis
+          label={{ value: "Temp. C ", angle: -90, position: "insideLeft" }}
+        />
         <Tooltip />
       </LineChart>
     );
@@ -67,13 +68,15 @@ const Graph = props => {
         width={800}
         height={350}
         data={allData}
-        margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
+        margin={{ top: 5, right: 30, bottom: 10, left: 0 }}
       >
         <Line type="monotone" dataKey="high" stroke="#8884d8" />
         {/* <Line type="monotone" dataKey="low" stroke="#333" /> */}
-        <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
+        {/* <CartesianGrid stroke="#ccc" strokeDasharray="5 5" /> */}
         <XAxis dataKey="name" />
-        <YAxis />
+        <YAxis
+          label={{ value: "Temp. C", angle: -90, position: "insideLeft" }}
+        />
         <Tooltip />
       </LineChart>
     );
