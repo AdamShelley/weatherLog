@@ -10,6 +10,7 @@ import "./HourCard.css";
 
 const HourCard = props => {
   console.log(props);
+
   return (
     <Card extraStyle={"hour-card"}>
       <div className="day-container">

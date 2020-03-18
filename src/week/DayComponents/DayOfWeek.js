@@ -21,7 +21,7 @@ const DayOfWeek = props => {
         {date} - {month}
       </h1> */}
       {props.week && <h2>{moment(newDate).format("MMMM Do")}</h2>}
-      {!props.week && <h2>{moment(newDate).format("MMMM Do, h:mm a")}</h2>}
+      {!props.week && <h2>{moment(newDate).format("h:mm a")}</h2>}
     </div>
   );
 };

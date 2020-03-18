@@ -35,3 +35,14 @@
 .hour__listitem {
   padding: 0.1rem;
 }
+
+@media screen and (max-width: 600px) {
+  .hourly-container__list {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hourly-container__list {
+    width: 95vw;
+  }
+}

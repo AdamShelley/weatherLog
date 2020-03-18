@@ -27,3 +27,51 @@
   align-items: center;
   list-style: none;
 }
+
+@media screen and (max-width: 600px) {
+  .day-container {
+    flex-direction: row;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .day-of-week {
+    /* max-width: 60%; */
+    flex: 1;
+  }
+
+  .day-of-week h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .forecast-icon {
+    font-size: 0.8rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.7rem;
+  }
+
+  .day-container {
+  }
+
+  .weather-description {
+    flex: 1;
+  }
+
+  .weather-description h2 {
+    font-size: 1.2rem;
+  }
+
+  .temp-data {
+    flex: 2;
+    margin: 0;
+  }
+}
